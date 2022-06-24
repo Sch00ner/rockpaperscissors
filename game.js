@@ -1,10 +1,10 @@
 function computerPlay() {
     let item = ["rock", "paper", "scissors"];
-    return item[Math.floor(Math.random() * (item.length - 1))]
+    return item[Math.floor(Math.random() * item.length)]
 }
 
 function playRound(playerSelection, computerSelection) {
-    
+
     playerSelection = playerSelection.toLowerCase()
 
     if(computerSelection == playerSelection) {
